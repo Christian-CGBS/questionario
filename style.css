@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fontes/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+      
+    /*src: url('fontes/Roboto-Black.ttf');
+      src: url('fontes/Roboto-BlackItalic.ttf');
+      src: url('fontes/Roboto-Bold.ttf');
+      src: url('fontes/Roboto-BoldItalic.ttf');
+      src: url('fontes/Roboto-Italic.ttf');
+      src: url('fontes/Roboto-Light.ttf');
+      src: url('fontes/Roboto-LightItalic.ttf');
+      src: url('fontes/Roboto-Medium.ttf');
+      src: url('fontes/Roboto-MediumItalic.ttf');
+      src: url('fontes/Roboto-Thin.ttf');
+      src: url('fontes/Roboto-ThinItalic.ttf');*/
+        
+}
+
+:root {
+    --corfundo: #F2ECE9;
+    --corfonte1: #8C3807;
+    --corfonte2: #683FBF;
+    --corborda: #8b4513;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--corfundo);
+}
+
+header h1 {
+    color: white;
+    background-image: linear-gradient(to right, var(--corfonte2) 60%, var(--corfonte1));
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.475);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main {
+    padding: 10px;
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 2em;
+}
+
+main > p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+h2 {
+    color: var(--corfonte1);
+    text-align: center;
+    border: 2px solid var(--corborda);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: rgba(172, 131, 83, 0.568); */
+}
+
+h3, h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid var(--corborda);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.441);
+}
+
+footer {
+    color: var(--corfonte2);
+    text-align: center;
+    /* background-color: rgb(188, 193, 230);*/
+    font-weight: bold;
+    font-size: small;
+    border: 2px solid var(--corborda);
+}
